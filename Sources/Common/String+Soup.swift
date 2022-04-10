@@ -5,7 +5,7 @@ public extension String {
         self = stripHTMLTags(with: activeFallback)
     }
     
-    fileprivate func stripHTMLTags(with conflictingFallBack: Bool) -> String {
+    func stripHTMLTags(with conflictingFallBack: Bool) -> String {
         do {
             let strippedText = try stripHTMLTags()
             return strippedText
